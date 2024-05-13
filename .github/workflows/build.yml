@@ -8,9 +8,7 @@ on:
 jobs:
   sonarcloud:
     name: SonarCloud
-    runs-on:
-      - self-hosted
-      - platform-eng-ent
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
         with:
